@@ -15,7 +15,7 @@
             
             <h2>Las mejores escuelas del mundo en Arte y Diseño</h2>
             
-            <h5>Por <a href="https://github.com/catsgugu">Giulia Pepe</a></h5>
+            <h5>Por <a href="https://github.com/rodrigoalbornozr">Rodrigo Albornoz</a></h5>
             
             <h6><time datetime="2026-10-09T17:00-03:00">Publicado el viernes 9 de octubre, 2026 &nbsp;&nbsp; 5:00 p.m. GMT-3</time></h6>            
 
@@ -101,7 +101,34 @@
             </table>
 			
 			<p>Más visual aún...<p>
-			<object data="viz.svg" type="image/svg+xml"></object>.
+			<object data="viz.svg" type="image/svg+xml"></object>
+			
+			<p>Visual e interactiva</p>
+			
+<canvas id="identidad"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    new Chart(document.getElementById("identidad"), {
+        type: "bar",
+        data: {
+            labels: ["Argentina","Australia","Austria","Belgium","Brazil","Canada","Chile","China (Mainland)","Colombia","Czech Republic","Denmark","Estonia","Finland","France","Germany","Hong Kong","India","Ireland","Italy","Japan","Malaysia","Mexico","Netherlands","Saudi Arabia","Singapore","South Korea","Sweden","Switzerland","Taiwan","Thailand","United Kingdom","United States","Vietnam"],
+            datasets: [
+                {
+                    label: "Veces en el top 100",
+                    data: [2, 5, 2, 1, 1, 2, 1, 6, 1, 1, 1, 1, 1, 3, 2, 2, 1, 1, 6, 2, 2, 2, 4, 1, 3, 3, 3, 2, 1, 1, 11, 24, 1],
+                    backgroundColor: "rgb(214, 214, 214)",
+                    borderWidth: 1,
+                },
+            ],
+        },
+        options: {
+            indexAxis: "y",
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 1, // Proporción 5:4 (Ancho / Alto = 5 / 4 = 1.25)
+        },
+    });
+</script>
 			
 			
             <h3>Oportunidades para estudiantes de la Universidad de Chile</h3>
